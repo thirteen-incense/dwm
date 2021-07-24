@@ -16,6 +16,8 @@ DIR=$(dirname "$LOC")
 #	dwm_resources
 #done &
 
+picom &
+
 while true; do
 #	xsetroot -name " [$(< .resources)] [$(dwm_battery)] [$(dwm_alsa)] [$(dwm_date)] "
     xsetroot -name "$(dwm_NetRraf)|$(dwm_memcpu)|$(dwm_ipaddr)|$(dwm_locktime)|$(dwm_light)|$(dwm_alsa)|$(dwm_battery)|$(dwm_wifistate)"
