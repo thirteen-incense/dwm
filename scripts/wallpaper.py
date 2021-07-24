@@ -4,7 +4,7 @@ import os
 import time
 import random
 
-path = "/home/code/wallpapers/"
+path = "/home/Octo/.dotfile/config/wallpapers/"
 files = os.listdir(path)
 
 while 1 == 1 :
