@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 dwm_battery () {
     CHARGE=$(cat /sys/class/power_supply/BAT0/capacity)

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 let n=0
 files=($HOME/wallpapers/*.*)
 count=${#files[@]}
