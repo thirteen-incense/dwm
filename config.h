@@ -69,7 +69,7 @@ static const char *touchpad[] = { "/home/Octo/.dotfile/config/dwm/scripts/touchp
 static const char *volup[]    = { "/home/Octo/.dotfile/config/dwm/scripts/volup.sh", NULL};
 static const char *voldown[]  = { "/home/Octo/.dofile/config/dwm/scripts/voldown.sh", NULL};
 static const char scratchpadname[] = "scratchpad";
-static const char *scratchpadcmd[] = { "alacritty", "-t", scratchpadname, "-g", "80x30", NULL };
+static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "100x40", NULL };
 static const char *scrot[] = {"scrot", NULL};
 static const char *chromium[] = {"chromium", NULL};
 static const char *chromiumproxy[] = {"chromium", "--proxy-server=socks://127.0.0.1:7891", NULL};
