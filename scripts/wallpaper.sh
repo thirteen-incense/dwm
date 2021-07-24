@@ -1,6 +1,6 @@
 #!/bin/sh
 let n=0
-files=($HOME/wallpapers/*.*)
+files=($HOME/.dotfile/config/wallpapers/*.*)
 count=${#files[@]}
 while [ 1 ]
 do
