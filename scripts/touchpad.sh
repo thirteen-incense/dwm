@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 id=`xinput list | grep "Touchpad" | cut -d'=' -f2 | cut -d'[' -f1`
 
