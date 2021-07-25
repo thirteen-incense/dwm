@@ -17,6 +17,9 @@ DIR=$(dirname "$LOC")
 #done &
 
 picom &
+clash &
+
+export FZF_DEFAULT_OPTS='--no-height --no-reverse'
 
 while true; do
 #	xsetroot -name " [$(< .resources)] [$(dwm_battery)] [$(dwm_alsa)] [$(dwm_date)] "
