@@ -1429,10 +1429,10 @@ run(void)
 
 void
 runAutostart(void) {
-	system("cd ~/.dotfile/config/dwm/scripts; ./touchpad.sh");
-	system("cd ~/.dotfile/config/dwm/scripts; ./autostart.sh &");
- 	system("cd ~/.dotfile/config/dwm/scripts; ./wallpaper.py &");
- 	system("cd ~/.dotfile/config/dwm/scripts; ./emacs-daemon.sh &");
+	system("./.dotfile/config/dwm/scripts/touchpad.sh");
+	system("./.dotfile/config/dwm/scripts/autostart.sh &");
+ 	system("./.dotfile/config/dwm/scripts/wallpaper.py &");
+ 	system("./.dotfile/config/dwm/scripts/emacs-daemon.sh &");
 }
 
 void
