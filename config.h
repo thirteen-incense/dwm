@@ -72,8 +72,9 @@ static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x60", NULL };
 static const char *scrot[] = {"scrot", NULL};
 static const char *chromium[] = {"chromium", NULL};
-static const char *chrome[] = {"google-chrome-stable", "--proxy-server=http:127.0.0.1:7890", NULL};
 static const char *chromiumproxy[] = {"chromium", "--proxy-server=socks://127.0.0.1:7891", NULL};
+static const char *chrome[] = {"google-chrome-stable", NULL};
+static const char *chromeproxy[] = {"google-chrome-stable", "--proxy-server=http://127.0.0.1:7890", NULL};
 static const char *emacsclient[] = {"emacsclient", "-ncF", "((alpha . 70))"};
 
 static Key keys[] = {
@@ -85,7 +86,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_w,      spawn,          {.v = touchpad } },
    	{ MODKEY,                       XK_z,      spawn,          {.v = chromium } },
 	{ MODKEY|ShiftMask,             XK_z,      spawn,          {.v = chromiumproxy } },
-	{ MODKEY|ShiftMask,             XK_a,      spawn,          {.v = chrome } },
+	{ MODKEY,          		XK_a,      spawn,          {.v = chrome } },
+	{ MODKEY|ShiftMask,             XK_a,      spawn,          {.v = chromeproxy } },
   	{ MODKEY|ShiftMask,             XK_j,      spawn,          {.v = voldown }},
   	{ MODKEY|ShiftMask,             XK_k,      spawn,          {.v = volup }},
   	{ MODKEY,                       XK_o,      togglescratch,  {.v = scratchpadcmd} },
